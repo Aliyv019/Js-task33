@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttons button{
+    padding: 15px;
+    margin:0+5px;
+    background: cyan;   
+}
+.buttons{
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    top: 200px;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.module_screen{
+
+    position: absolute;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    border: 1px solid lightgray;
+    width: 50%;
+    border-radius: 15px;
+    padding: 16px;
+    z-index: 1;
+}
+.outer_screen{
+    backdrop-filter: blur(4px);
+    position: relative;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.module_screen button{
+    position: absolute;
+    background: none;
+    border: none;
+    width: 16px;
+    right: 16px;
+}
